@@ -1,10 +1,20 @@
-import logo from './logo.svg';
+import React from 'react';
+import Teacher from './components/teacher';
 import './App.css';
+import ReactDOM from "react-dom";
+import Create from './components/Create';
+import { Route } from 'react-router-dom';
+
+
 
 function App() {
+
+
+  
   return (
     <div className="App">
-      <h1>hello word</h1>
+      <Teacher />
+     
     </div>
   );
 }
