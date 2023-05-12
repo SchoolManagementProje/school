@@ -1,7 +1,7 @@
 nav {
     background-color: #F3CA20;
     padding: 20px;
-  }
+    height:35px   }
   
   nav ul {
     list-style: none;
@@ -12,11 +12,12 @@ nav {
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
+    margin-left: 1150px;
     
   }
   
   img {
-    width: 400px;
+    width: 700px;
     height: 350px;
     margin-bottom: 20px;
     text-align: center;
@@ -27,11 +28,26 @@ nav {
     background-color: #A9A9A9;
     padding: 20px;
     text-align: center;
-    position: absolute;
+    position: fixed;
     bottom: 0;
-    width: 100%;
+    width: 1325px;
+    height: 20px;
   }
-
+#myvid {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    -ms-transform: translateX(-50%) translateY(-50%);
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    background-size: cover; 
+  }
    
  #button{
     height: 20px;
