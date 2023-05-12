@@ -36,29 +36,8 @@ app.get('/use',(req,res)=>{
 
 })
 
-
-
-app.post('/posty', (req, res) => {
-  const post = req.body;
-  console.log("creating post", post); 
-  db.query(
-    `INSERT INTO teacher (name, email, city) VALUES (?, ?, ?)`,
-    [post.name, post.email, post.city],
-    (error, results) => {
-      if (error) {
-        console.log(error);
-        res.status(500).send(error.message);
-      } else {
-        res.status(200).send(results);
-      }
-    }
-  );
-});
-
-
-
 app.post('/create', (req, res) => {
-    const post = req.body;
+    const course = req.body;
     console.log("creating course", course); 
     db.query(
       `INSERT INTO courses (name, subject, hour) VALUES (?, ?, ?)`,
